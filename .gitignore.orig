@@ -4,6 +4,23 @@
 # User-specific files
 *.suo
 *.user
+<<<<<<< HEAD
+*.sln.docstates
+*.orig
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+[Bb]in/
+[Oo]bj/
+[Oo]utput/
+.fake/
+
+# allow CI/release
+!CI/release
+=======
 *.userosscache
 *.sln.docstates
 
@@ -24,11 +41,16 @@ bld/
 
 # Visual Studo 2015 cache/options directory
 .vs/
+>>>>>>> 3c73f262762d8c4310bdb9eadf65bf901d46476a
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
 
+<<<<<<< HEAD
+*_i.c
+*_p.c
+=======
 # NUNIT
 *.VisualState.xml
 TestResult.xml
@@ -41,6 +63,7 @@ dlldata.c
 *_i.c
 *_p.c
 *_i.h
+>>>>>>> 3c73f262762d8c4310bdb9eadf65bf901d46476a
 *.ilk
 *.meta
 *.obj
@@ -60,12 +83,18 @@ dlldata.c
 *.vssscc
 .builds
 *.pidb
+<<<<<<< HEAD
+*.log
+*.scc
+
+=======
 *.svclog
 *.scc
 
 # Chutzpah Test files
 _Chutzpah*
 
+>>>>>>> 3c73f262762d8c4310bdb9eadf65bf901d46476a
 # Visual C++ cache files
 ipch/
 *.aps
@@ -79,19 +108,25 @@ ipch/
 *.vsp
 *.vspx
 
+<<<<<<< HEAD
+=======
 # TFS 2012 Local Workspace
 $tf/
 
+>>>>>>> 3c73f262762d8c4310bdb9eadf65bf901d46476a
 # Guidance Automation Toolkit
 *.gpState
 
 # ReSharper is a .NET coding add-in
 _ReSharper*/
 *.[Rr]e[Ss]harper
+<<<<<<< HEAD
+=======
 *.DotSettings.user
 
 # JustCode is a .NET coding addin-in
 .JustCode
+>>>>>>> 3c73f262762d8c4310bdb9eadf65bf901d46476a
 
 # TeamCity is a build add-in
 _TeamCity*
@@ -100,6 +135,11 @@ _TeamCity*
 *.dotCover
 
 # NCrunch
+<<<<<<< HEAD
+*.ncrunch*
+.*crunch*.local.xml
+
+=======
 _NCrunch_*
 .*crunch*.local.xml
 
@@ -110,6 +150,7 @@ AutoTest.Net/
 # Web workbench (sass)
 .sass-cache/
 
+>>>>>>> 3c73f262762d8c4310bdb9eadf65bf901d46476a
 # Installshield output folder
 [Ee]xpress/
 
@@ -127,6 +168,17 @@ DocProject/Help/html
 publish/
 
 # Publish Web Output
+<<<<<<< HEAD
+*.Publish.xml
+#*.pubxml
+
+# NuGet Packages Directory
+## TODO: If you have NuGet Package Restore enabled, uncomment the next line
+# packages/
+
+# Windows Azure Build Output
+csx
+=======
 *.[Pp]ublish.xml
 *.azurePubxml
 # TODO: Comment the next line if you want to checkin your web deploy settings 
@@ -145,36 +197,79 @@ publish/
 
 # Windows Azure Build Output
 csx/
+>>>>>>> 3c73f262762d8c4310bdb9eadf65bf901d46476a
 *.build.csdef
 
 # Windows Store app package directory
 AppPackages/
 
 # Others
+<<<<<<< HEAD
+*.Cache
+=======
 *.[Cc]ache
+>>>>>>> 3c73f262762d8c4310bdb9eadf65bf901d46476a
 ClientBin/
 [Ss]tyle[Cc]op.*
 ~$*
 *~
 *.dbmdl
+<<<<<<< HEAD
+*.[Pp]ublish.xml
+*.pfx
+*.publishsettings
+=======
 *.dbproj.schemaview
 *.pfx
 *.publishsettings
 node_modules/
 bower_components/
+>>>>>>> 3c73f262762d8c4310bdb9eadf65bf901d46476a
 
 # RIA/Silverlight projects
 Generated_Code/
 
+<<<<<<< HEAD
+# Backup & report files from converting an old project file to a newer
+# Visual Studio version. Backup files are not needed, because we have git ;-)
+=======
 # Backup & report files from converting an old project file
 # to a newer Visual Studio version. Backup files are not needed,
 # because we have git ;-)
+>>>>>>> 3c73f262762d8c4310bdb9eadf65bf901d46476a
 _UpgradeReport_Files/
 Backup*/
 UpgradeLog*.XML
 UpgradeLog*.htm
 
 # SQL Server files
+<<<<<<< HEAD
+App_Data/*.mdf
+App_Data/*.ldf
+
+# =========================
+# Windows detritus
+# =========================
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Mac crap
+.DS_Store
+
+Abb.TaktClock/.vs/
+clock.css
+clock.html
+Prototypes/clock/node_modules/
+Prototypes/backend/node_modules/
+=======
 *.mdf
 *.ldf
 
@@ -194,3 +289,4 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
+>>>>>>> 3c73f262762d8c4310bdb9eadf65bf901d46476a
