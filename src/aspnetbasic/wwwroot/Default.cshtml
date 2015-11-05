@@ -1,0 +1,28 @@
+﻿@inherits RazorEngine.Templating.TemplateBase
+<!DOCTYPE html>
+@{
+    var title = "ASP.NET 5 Razor Pages";
+    var items = new[]
+    {
+        new {Name = "Jürgen", Age = 37},
+        new {Name = "Demian", Age = 37},
+        new {Name = "David", Age = 37},
+        new {Name = "Scott", Age = 37}
+    };
+}
+<html>
+<head>
+    <title>@title</title>
+</head>
+<body>
+    <div>
+        <h1>@title</h1>
+        <ul>
+            @foreach (var item in items)
+            {
+                <li>@item.Name (@item.Age)</li>
+            }
+        </ul>
+    </div>
+</body>
+</html>

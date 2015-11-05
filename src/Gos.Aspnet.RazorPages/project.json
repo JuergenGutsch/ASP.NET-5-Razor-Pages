@@ -1,0 +1,21 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "Gos.Aspnet.RazorPages Class Library",
+  "authors": [ "Juergen" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+  
+  "dependencies": {
+    "Microsoft.AspNet.Diagnostics": "1.0.0-beta8",
+    "Microsoft.AspNet.Server.Kestrel": "1.0.0-beta8",
+    "Microsoft.Framework.Configuration.Json": "1.0.0-beta8",
+    "Microsoft.Framework.Logging": "1.0.0-beta8",
+    "Microsoft.Framework.Logging.Console": "1.0.0-beta8",
+    "Microsoft.Framework.Logging.Debug": "1.0.0-beta8",
+    "RazorEngine": "4.2.0-beta3"
+  },
+  "frameworks": {
+    "dnx451": { }
+  }
+}
