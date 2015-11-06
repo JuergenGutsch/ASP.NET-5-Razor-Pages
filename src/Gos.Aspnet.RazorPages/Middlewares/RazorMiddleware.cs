@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.FileProviders;
@@ -24,7 +25,16 @@ namespace Gos.Aspnet.RazorPages.Middlewares
 
         public async Task Invoke(HttpContext context)
         {
-            var fileInfo = _env.WebRootFileProvider.GetFileInfo(context.Request.Path.Value);
+            var requestPath = context.Request.Path.Value;
+            if (!String.IsNullOrWhiteSpace(requestPath) &&
+                requestPath.Equals("/", StringComparison.CurrentCultureIgnoreCase))
+            {
+                requestPath = "/Default.cshtml";
+            }
+
+            var fileInfo = _env.WebRootFileProvider.GetFileInfo(requestPath);
+
+
 
             if (fileInfo.Exists && CanHandle(fileInfo))
             {
@@ -36,9 +46,10 @@ namespace Gos.Aspnet.RazorPages.Middlewares
 
                 var config = new TemplateServiceConfiguration();
                 // .. configure your instance
-
+                config.TemplateManager = new ResolvePathTemplateManager(new[] { _env.MapPath("/Shared") });
                 var service = RazorEngineService.Create(config);
-                service.WithContext(new RazorPageContext {HttpContext = context });
+
+                service.WithContext(new RazorPageContext { HttpContext = context });
                 Engine.Razor = service;
 
                 string result;
